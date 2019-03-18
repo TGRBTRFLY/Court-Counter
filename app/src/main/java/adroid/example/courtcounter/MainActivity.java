@@ -10,16 +10,16 @@ public class MainActivity extends AppCompatActivity {
     int scoreTeamA = 0;
     int scoreTeamB = 0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-/** TEAM A
-
     /**
+     * TEAM A
+     * <p>
+     * /**
      * Displays the given score for Team A.
      */
     public void displayForTeamA(int score) {
@@ -51,8 +51,9 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(scoreTeamA);
     }
 
-/** TEAM B
-
+    /**
+     * TEAM B
+     */
     /**
      * Displays the given score for Team B
      */
@@ -77,14 +78,16 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(scoreTeamB);
     }
 
-    /** add 3 points to Team B
+    /**
+     * add 3 points to Team B
      */
     public void teamBplus1(View v) {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
     }
 
-    /** Resets both teams scores to 0
+    /**
+     * Resets both teams scores to 0
      */
     public void reset(View v) {
         scoreTeamA = 0;
