@@ -77,14 +77,15 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(scoreTeamB);
     }
 
-    /**
-     * add 3 points to Team B
+    /** add 3 points to Team B
      */
     public void teamBplus1(View v) {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
     }
 
+    /** Resets both teams scores to 0
+     */
     public void reset(View v) {
         scoreTeamA = 0;
         scoreTeamB = 0;
